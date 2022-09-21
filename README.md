@@ -2,17 +2,18 @@
 
 A Simple ToDo App is built using the MVC Architecture
 
+![Animation](https://user-images.githubusercontent.com/84820874/191619739-9c4951ba-7583-4c19-abb8-79b84b2739f9.gif)
+
+## How It's Made:
+
+**Tech used:** HTML, CSS, JavaScript, ejs node, expreess
 ---
 
 > Be sure to add that lovely star 😀 and fork it for your own copy
 
 ---
 
-# Objectives
 
-- It's an app created to understand how MVC concept and logins are added
-
----
 
 
 # Packages/Dependencies used 
@@ -25,7 +26,6 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 
 `npm install` 
 
----
 
 # Things to add
 
