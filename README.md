@@ -6,15 +6,13 @@ A Simple ToDo App is built using the MVC Architecture
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript, ejs node, expreess
----
-
-> Be sure to add that lovely star 😀 and fork it for your own copy
-
+**Tech used:** 
+HTML, CSS, JavaScript, ejs node, expreess
 ---
 
 
 
+---
 
 # Packages/Dependencies used 
 
