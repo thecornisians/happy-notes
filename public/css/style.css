@@ -9,7 +9,7 @@ h1{
 }
 .completed{
     text-decoration: line-through;
-    color: gray;
+    color: black;
 }
 /* .not{
     text-decoration: underline;
@@ -62,7 +62,7 @@ h1{
 .todoItems{
     background-color:gray;
     border-radius: 10px;
-    list-style: none;
+    list-style-type: disc;
     color: #ffff;
     padding: 10px;
     display: block;
@@ -75,22 +75,26 @@ h1{
     gap: 3rem;
 }
 
-.task-section > *{
+/* .task-section > *{
     width: 33.3%;
-}
+} */
 .mr{
     margin-right: 9px;
+}
+
+.calendar{
+    max-width: 100%;
 }
 
 @media (max-width: 768px) {
     .task-section{
         flex-direction: column;
     }
+
+    .calendar{
+        display: none;
+    }
  }
 
-.calendar{
-    max-width: 100%;
-    display: flex;
-    align-items: flex-end;
-}
+
  

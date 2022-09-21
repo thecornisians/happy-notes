@@ -7,10 +7,15 @@
             <ul>
             <% todos.forEach( el => { %>
                     <li class="todoItems" data-id='<%=el._id%>'>
-                       
-                        <p class='todoItem <%= el.completed === true ? 'completed' : 'not'%>'> <span><i class="fa-sharp fa-solid fa-clipboard-check mr"></i></span><%= el.todo %> <span class='del'>delete</span> </p>
+                       <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
+                        <span class='del mr'> <i class="fa-solid fa-trash ms-4"></i> </span>
+                        <!-- <p class='todoItem <%= el.completed === true ? 'completed' : 'not'%>'> <span><i class="fa-sharp fa-solid fa-clipboard-check mr"></i></span><%= el.todo %> <span class='del'>delete</span> </p> -->
                     </li> 
-            <% }) %>    
+            <% }) %>     
+        </ul>
+    
+        <h2><%= user.userName %> has <%= left %> things left to do.</h2>
+    
             </ul>
         </div> 
         
@@ -24,10 +29,9 @@
                  <input type="submit" class="btn-success btn p-3">
              </form>
              <p class="text-success mt-3">Click on task to mark as complete</p>
+             <img src="/images/calendar.svg" alt="calendar" class="calendar">
         </div>
-        <div class="">
-            <img src="/images/calendar.svg" alt="calendar" class="calendar">
-        </div>
+       
     
         <!-- <a href="/logout">Logout</a> -->
     </div>
