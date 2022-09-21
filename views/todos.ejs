@@ -1,0 +1,35 @@
+<%- include('partials/header') -%>
+<%- include('partials/navbar') -%>
+<body class="bg-dark d-flex flex-column min-vh-100">
+    <div class="container mt-4 task-section mb-4">
+        <div>
+             <h1 class="text-center text-light">Tasks</h1>
+            <ul>
+            <% todos.forEach( el => { %>
+                    <li class="todoItems" data-id='<%=el._id%>'>
+                       
+                        <p class='todoItem <%= el.completed === true ? 'completed' : 'not'%>'> <span><i class="fa-sharp fa-solid fa-clipboard-check mr"></i></span><%= el.todo %> <span class='del'>delete</span> </p>
+                    </li> 
+            <% }) %>    
+            </ul>
+        </div> 
+        
+    
+        <div class="text-light align-items-center">
+            <h4 class="text-muted"> <i class="fa-regular fa-calendar-days text-light calendar"></i> <%= user.userName %> has <%= left %> things left to do.</h2>
+            <h4 class="text-muted"><i class="fa-regular fa-pen-to-square text-light mb-2"></i> Enter in your new task</h2>
+            <form action="/todos/createTodo" method='POST'>
+                <!-- <input type="text" placeholder="Enter Todo Item" name='todoItem'> -->
+                <textarea class="form-control mb-3" placeholder="Enter your Todo item" id="exampleFormControlTextarea1" rows="6" name="todoItem"></textarea>
+                 <input type="submit" class="btn-success btn p-3">
+             </form>
+             <p class="text-success mt-3">Click on task to mark as complete</p>
+        </div>
+        <div class="">
+            <img src="/images/calendar.svg" alt="calendar" class="calendar">
+        </div>
+    
+        <!-- <a href="/logout">Logout</a> -->
+    </div>
+    <%- include('partials/footer') -%>
+    <script src="js/main.js"></script>

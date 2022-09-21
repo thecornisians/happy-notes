@@ -1,0 +1,96 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    color: red;
+}
+.completed{
+    text-decoration: line-through;
+    color: gray;
+}
+/* .not{
+    text-decoration: underline;
+} */
+
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background{
+    background-color: #ef5c3bd2;
+}
+
+.hero-text{
+    font-size: 4rem;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.text-hightlight{
+    color: hsl(218, 78%, 58%)
+}
+
+.nav-background{
+    background-color:#F1785D
+}
+.email-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-page{
+    background-image: url(../images/bg-intro-desktop.png);
+}
+
+.footer {
+	margin: 1vh 5.5vw;
+	padding-top: 1.5vh;
+	padding-bottom: 1.5vh;
+	border-top: 1px solid #ffff;
+    color: #ffff;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.todoItems{
+    background-color:gray;
+    border-radius: 10px;
+    list-style: none;
+    color: #ffff;
+    padding: 10px;
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.task-section{
+    display: flex;
+    gap: 3rem;
+}
+
+.task-section > *{
+    width: 33.3%;
+}
+.mr{
+    margin-right: 9px;
+}
+
+@media (max-width: 768px) {
+    .task-section{
+        flex-direction: column;
+    }
+ }
+
+.calendar{
+    max-width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+ 

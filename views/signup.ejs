@@ -1,0 +1,64 @@
+<%- include('partials/header') -%>
+<body class="background sign-up-page container d-flex flex-column min-vh-100">
+    <main class="container">
+        <div class="row justify-content-center">
+            <section class="col-6 mt-5">
+                <% if (locals.messages.errors) { %>
+                    <% messages.errors.forEach( el => { %>
+                        <div class="alert alert-danger"><%= el.msg %></div>
+                    <% }) %>    
+                <% } %>
+            </section>
+            <section class="">
+                <section class="col-6 mt-5">
+                    <% if (locals.messages.errors) { %>
+                        <% messages.errors.forEach( el => { %>
+                            <div class="alert alert-danger"><%= el.msg %></div>
+                        <% }) %>    
+                    <% } %>
+                </section>
+                <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+                    <div class="row gx-lg-5 align-items-center mb-5">
+                    <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+                        <h1 class="my-5 display-5 fw-bold text-light">Happy Notes</h1>
+                        <p class="text-light">Failing to plan is a plan to fail. Plan your schedule, set yourself up for success</p>
+                        <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+                        <a href="/" class="btn btn-success">Back to Homepage</a>
+                        <a href="/login" class="btn btn-success">Login</a>
+                        </p>
+                    </div>
+                
+                    <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+                        <div class="card bg-glass">
+                        <div class="card-body px-4 py-5 px-md-5">
+                            <form action="/signup" method="POST">
+                                <div class="mb-3">
+                                    <label for="userName" class="form-label">Username</label>
+                                    <input type="text" class="form-control" name="userName" placeholder="User Name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Email" class="form-label">Email</label>
+                                    <input type="text" class="form-control" name="email" placeholder="Email" >
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="password"/>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="confirm-password" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" name="confirmPassword" placeholder="Confirm Password">
+                                </div>
+                                <a href="" class="btn btn-primary">Sign Up</a>
+                                </form>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </section>
+            </div>
+    
+  
+<%- include('partials/footer') -%>
+
+
